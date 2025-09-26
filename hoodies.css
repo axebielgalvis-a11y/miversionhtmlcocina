@@ -1,0 +1,115 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+.logo{
+  top: 0;
+  left: 0;
+  width: 15%;
+  margin: 10px;
+}
+
+header {
+  position: sticky;   /* hace que se quede pegado */
+  top: 0;             /* posición en la parte superior */
+  width: 100%;        /* que ocupe todo el ancho */
+  background: rgb(161, 160, 160);  /* color de fondo para que no se transparente */
+  z-index: 1000;      /* asegura que quede por encima del contenido */
+  height: 100%;
+  
+}
+
+.li-cent{
+  position: relative;
+  right: 500px;
+}
+
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+
+  transition: 0.8s all;
+  padding: 18px 20px;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+nav ul{
+  padding-top: 10px;
+  float: right;
+}
+
+a:active{
+  color: black;
+}
+
+a:visited{
+  color: black;
+}
+
+nav ul li a:hover{
+  background-color: rgb(228, 82, 82);
+}
+
+a{
+  border: 10px solid transparent;
+  color: black;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+.contacto-rojo{
+  border: 2px solid red;
+  background-color: red;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+    h1 {
+      font-size: 2rem;
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    /* Contenedor con Grid */
+    .grid-buzos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 50px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .producto {
+      background: rgb(3, 3, 3);
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+    }
+
+    .producto:hover {
+      transform: scale(1.03);
+    }
+
+    .producto img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .nombre {
+      font-weight: bold;
+      margin-top: 10px;
+      color: white;
+      text-align: center;
+    }
+
+    .precio {
+      color: #333;
+      font-size: 1.1rem;
+      margin-top: 5px;
+      color: white;
+      text-align: center;
+    }

@@ -1,0 +1,184 @@
+
+body {
+  justify-content: center;
+}
+
+.logo{
+  top: 0;
+  left: 0;
+  width: 20%;
+  margin: 10px;
+}
+
+header {
+  position: sticky;   /* hace que se quede pegado */
+  top: 0;             /* posición en la parte superior */
+  width: 100%;        /* que ocupe todo el ancho */
+  background: rgb(161, 160, 160);  /* color de fondo para que no se transparente */
+  z-index: 1000;      /* asegura que quede por encima del contenido */
+  height: 100%;
+  
+}
+
+.li-cent{
+  position: relative;
+  right: 500px;
+}
+
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+
+  transition: 0.8s all;
+  padding: 18px 20px;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+nav ul{
+  padding-top: 10px;
+  float: right;
+}
+
+a:active{
+  color: black;
+}
+
+a:visited{
+  color: black;
+}
+
+nav ul li a:hover{
+  background-color: rgb(228, 82, 82);
+}
+
+a{
+  border: 10px solid transparent;
+  color: black;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+.contacto-rojo{
+  border: 2px solid red;
+  background-color: red;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+.product-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  padding: 40px;
+  align-items: flex-start;
+}
+
+.product-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* ----- Información del producto ----- */
+.product-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.product-price {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.product-description {
+  margin: 15px 0;
+  color: #444;
+}
+
+.product-features {
+  margin: 10px 0;
+  padding-left: 20px;
+  color: #444;
+}
+
+hr {
+  margin: 15px 0;
+}
+
+/* ----- Tallas ----- */
+.product-sizes {
+  margin: 15px 0;
+}
+
+.size {
+  border: 1px solid #ccc;
+  padding: 8px 14px;
+  margin-right: 8px;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.size.selected {
+  border-color: #000;
+}
+
+.size.disabled {
+  color: #aaa;
+  border-color: #ddd;
+  cursor: not-allowed;
+}
+
+/* ----- Cantidad ----- */
+.product-quantity {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.product-quantity button {
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.product-quantity input {
+  width: 50px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.product-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.add-to-cart {
+  padding: 12px;
+  border: 1px solid #000;
+  background: #fff;
+  cursor: pointer;
+}
+
+.buy-now {
+  padding: 12px;
+  border: none;
+  background: #000;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .product-page {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .product-sizes, .product-quantity, .product-actions {
+    justify-content: center;
+  }
+}

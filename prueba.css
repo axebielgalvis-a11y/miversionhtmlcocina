@@ -1,0 +1,248 @@
+body{
+  background-color: rgb(102, 101, 101);
+  background-image: url(imagenes/DETAILS\ FROM\ 🥀\ [IL\ LATO\ OSCURO]\ LO\ QUE\ DESENCADENA\ FINALMENTE\ EN\ LUZ.\ SHOP\ IN\ CLEMONT.CO\ \(1\).jpg);
+  background-size: cover;
+}
+  
+
+.logo{
+  top: 0;
+  left: 0;
+  width: 15%;
+  margin: 1%;
+}
+
+.enfoque p{
+position: relative;
+text-align: center;
+left: 150px;
+font-size: 15px;
+max-width: 500px;
+font-weight: bold;
+font-family: Georgia, 'Times New Roman', Times, serif;
+top: 50px;
+color: white;
+}
+
+.enfoque h2 {
+display: flex;
+position: relative;
+top: 50px;
+padding-left: 250px;
+color: white;
+}
+
+video {
+  position: relative;
+  left: 200px;
+  max-width: 300px;
+  top: 50px;
+}
+
+header {
+  position: sticky;   /* hace que se quede pegado */
+  top: 0;             /* posición en la parte superior */
+  width: 100%;        /* que ocupe todo el ancho */
+  background: rgb(161, 160, 160);  /* color de fondo para que no se transparente */
+  z-index: 1000;      /* asegura que quede por encima del contenido */
+  height: 100%;
+  
+}
+
+.li-cent{
+  position: relative;
+  right: 15%;
+}
+
+.li-carrito{
+  font-size: 30px;
+}
+
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+
+  transition: 0.8s all;
+  padding: 18px 20px;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+nav ul{
+  padding-top: 10px;
+  float: right;
+}
+
+a:active{
+  color: black;
+}
+
+a:visited{
+  color: black;
+}
+
+nav ul li a:hover{
+  background-color: rgb(228, 82, 82);
+}
+
+a{
+  border: 10px solid transparent;
+  color: black;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+.contacto-rojo{
+  border: 2px solid red;
+  background-color: red;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+.titulo-1{
+  background-color: white;
+  text-align: center;
+  font-weight: bold;
+  border: 2px solid white;
+  font-family: fantasy;
+}
+
+.titulo-1 {
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+/* Contenedor con Grid */
+.grid-camisetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.producto {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+.producto:hover {
+  transform: scale(1.03);
+}
+
+.producto img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.nombre {
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.precio {
+  color: #333;
+  font-size: 1.1rem;
+  margin-top: 5px;
+  text-align: center;
+}
+
+ .footer {
+  background: #111;          /* Fondo oscuro elegante */
+  color: #eee;               /* Texto claro */
+  padding: 50px 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-contenido {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 250px;
+  margin: 20px;
+}
+
+.footer-col h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color:  rgb(228, 82, 82);   /* Color dorado para resaltar */
+  text-transform: uppercase;
+}
+
+.footer-col li a{
+  color: #eee;
+}
+
+.footer-col p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #bbb;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin: 8px 0;
+}
+
+.footer-col ul li a {
+  color: #bbb;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-col li a:hover {
+  color:  rgb(228, 82, 82);
+}; /* resalta al pasar el mouse */
+
+
+.redes a {
+  font-size: 20px;
+  margin-right: 15px;
+  color: #bbb;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.redes a:hover {
+  color:  rgb(228, 82, 82);
+};
+
+
+/* Línea inferior del footer */
+.footer::after {
+  content: "© 2025 Clemont - Todos los derechos reservados";
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 13px;
+  color: #666;
+}
+ .redes a{
+  color: #eee;
+ }
